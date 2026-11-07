@@ -1,0 +1,54 @@
+﻿{
+  "name": "dsh-brief-pack",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Task-pack builder for DeepSeek Harness: compress large files into a single <=8000-token brief a subagent can read alone, so context is not re-sent once per subagent.",
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "任务包打包器",
+    "description": "pack_brief 把大报告/大日志按 hint 关键词切成带行号的 ≤8000 token 任务包；spawn_with_brief 派一个只读该任务包、只回 ≤10 行摘要的子代理。"
+  },
+  "exports": {
+    ".": "./entry.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "entry.js",
+    "impl.js",
+    "cordis.patch.yml",
+    "icon.svg",
+    "locale",
+    "README.md",
+    "LICENSE",
+    "test/"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "context-engineering",
+    "subagent",
+    "token-saving",
+    "task-pack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcd887/dsh-brief-pack.git"
+  },
+  "homepage": "https://github.com/dcd887/dsh-brief-pack#readme",
+  "bugs": {
+    "url": "https://github.com/dcd887/dsh-brief-pack/issues"
+  },
+  "scripts": {
+    "test": "node selftest.mjs"
+  }
+}

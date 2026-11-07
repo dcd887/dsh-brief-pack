@@ -1,0 +1,4 @@
+{
+  "title": "任务包打包器",
+  "description": "pack_brief 把大报告/大日志按 hint 关键词切成带行号的 ≤8000 token 任务包；spawn_with_brief 派一个只读该任务包、只回 ≤10 行摘要的子代理。"
+}

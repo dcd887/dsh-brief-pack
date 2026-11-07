@@ -1,0 +1,4 @@
+{
+  "title": "Brief Packer",
+  "description": "pack_brief condenses large reports/logs into a ≤8000-token brief with line-numbered excerpts; spawn_with_brief delegates one child that reads only that brief and replies with ≤10 lines."
+}
