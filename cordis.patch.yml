@@ -1,4 +1,4 @@
-﻿- insert:
+- insert:
     - id: brief-pack
       name: 'dsh-brief-pack'
       config: {}
